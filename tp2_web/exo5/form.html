@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initiale-scale=1.0">
+    <title>Inscription</title>
+</head>
+<body>
+    <form action="form.php" method="post">
+
+        Nom : <br>
+        <input type="text" name="nom" required pattern="[A-Za-zÀ-ÿ\- ]{2,30}"> <br><br>
+
+        Prenom : <br>
+        <input type="text" name="prenom" required pattern="[A-Za-z\- ]{2,30}"> <br><br>
+
+        Email : <br>
+        <input type="email" name="email" required> <br><br><br><br>
+
+        <input type="submit" value="Inscription">
+    </form>
+</body>
+</html>

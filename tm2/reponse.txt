@@ -1,0 +1,24 @@
+EXPRESSIONS RÉGULIÈRES - LANGAGES SANS FACTEURS SPÉCIFIQUES
+
+1. Le langage des mots ne contenant pas le facteur 'bc':
+Expression régulière : (b(a|c)*|c|a)*
+Explication :
+- b doit être suivi par soit 'a' soit 'c', mais jamais directement par 'c'
+- On peut avoir autant de 'a' et 'c' qu'on veut
+- Le mot peut commencer par n'importe quelle lettre
+
+2. Le langage des mots ne contenant pas le facteur 'ab':
+Expression régulière : (a(c|b)*|b|c)*
+Explication :
+- Après un 'a', on ne peut pas avoir un 'b'
+- On peut avoir autant de 'b' et 'c' qu'on veut
+- Le mot peut commencer par n'importe quelle lettre
+
+3. Le langage des mots ne contenant pas le facteur 'ca':
+Expression régulière : (c(b|c)*|a|b)*
+Explication :
+- Après un 'c', on ne peut pas avoir un 'a'
+- On peut avoir autant de 'a' et 'b' qu'on veut
+- Le mot peut commencer par n'importe quelle lettre
+
+Note : Ces expressions régulières sont construites sur l'alphabet Σ = {a,b,c} 
